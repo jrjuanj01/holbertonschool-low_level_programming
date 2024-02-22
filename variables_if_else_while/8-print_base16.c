@@ -8,7 +8,11 @@ int main(void)
 {
 	char hex;
 
-		for (hex = 0x61; hex <= 0x7a ; hex++)
+		for (hex = 0x30; hex <= 0x39; hex++)
+		{
+			putchar(hex);
+		}
+		for (hex = 0x61; hex <= 0x66; hex++)
 		{
 			putchar(hex);
 		}
