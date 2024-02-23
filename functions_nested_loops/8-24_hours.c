@@ -7,12 +7,12 @@
  */
 void jack_bauer(void)
 {
-	char h1 = 0;
-	char h2 = 0;
-	char m1 = 0;
-	char m2 = 0;
+	char h1 = '0';
+	char h2 = '0';
+	char m1 = '0';
+	char m2 = '0';
 
-	for (m2 = 0; m2 <= '9'; m2++)
+	for (m2 = '0'; m2 <= '9'; m2++)
 	{
 		if (h1 == '2' && h2 == '4')
 		{
@@ -31,7 +31,7 @@ void jack_bauer(void)
 		}
 		if (m1 == '6')
 		{
-			m1 = '/';
+			m1 = '0';
 			h2++;
 		}
 		if (h2 == '9')
