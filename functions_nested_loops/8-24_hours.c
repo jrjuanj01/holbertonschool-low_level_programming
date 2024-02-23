@@ -34,7 +34,7 @@ void jack_bauer(void)
 			m1 = '0';
 			h2++;
 		}
-		if (h2 == '9')
+		if (h2 == ':')
 		{
 			h2 = '0';
 			h1++;
