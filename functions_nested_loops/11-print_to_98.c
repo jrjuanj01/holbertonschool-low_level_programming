@@ -32,7 +32,7 @@ void print_to_98(int n)
 		{
 			_putchar('-');
 			if (n <= -100)
-				_putchar((n / 100) + '0');
+				_putchar(((n * -1) / 100) + '0');
 			if (n <= -10)
 				_putchar(((n * -1) / 10) + '0');
 			_putchar(((n * -1) % 10) + '0');
