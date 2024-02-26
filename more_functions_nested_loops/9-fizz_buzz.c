@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * Fizz_buzz - prints 1-100 replacing three and five
+ * main - prints 1-100 replacing three and five
  *
  * Return: Always 0 (Success)
  */
-void Fizz_buzz(void)
+int main(void)
 {
 	int num;
 
@@ -18,4 +18,5 @@ void Fizz_buzz(void)
 			printf("%d", num);
 		putchar(' ');
 	}
+	return (0);
 }
