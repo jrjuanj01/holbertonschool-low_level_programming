@@ -17,6 +17,6 @@ void Fizz_buzz(void)
 			printf("%s", "Buzz");
 		if (num % 3 != 0 && num % 5 != 0)
 			printf("%d", num);
-		_putchar(' ');
+		putchar(' ');
 	}
 }
