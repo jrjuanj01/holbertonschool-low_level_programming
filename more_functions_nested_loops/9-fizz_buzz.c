@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 /**
  * Fizz_buzz - prints 1-100 replacing three and five
  *
