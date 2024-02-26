@@ -9,7 +9,8 @@ void print_diagonal(int n)
 	int ln;
 	int spc;
 
-
+	if (n <= 0)
+		_putchar('\n');
 	for (ln = 0; ln < n; ln++)
 	{
 		for (spc = ln; spc > 0; --spc)
@@ -19,5 +20,4 @@ void print_diagonal(int n)
 		_putchar(92);
 		_putchar('\n');
 	}
-
 }
