@@ -16,8 +16,7 @@ int main(void)
 			printf("%s", "Buzz");
 		if (num % 3 != 0 && num % 5 != 0)
 			printf("%d", num);
-		if (num < 100)
-			putchar(' ');
+		putchar(' ');
 	}
 	return (0);
 }
