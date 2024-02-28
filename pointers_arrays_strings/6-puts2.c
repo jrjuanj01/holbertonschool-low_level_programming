@@ -6,9 +6,11 @@
  */
 void puts2(char *str)
 {
-		int ln ;
+		int ttl;
+		int idx;
 
-	for (ln = 0; str[ln] != '\0'; ln++, ln++)
-		_putchar(str[ln]);
+	for (ttl = 0; str[ttl] != '\0'; ttl++){}
+	for (idx = 0; idx < ttl; idx += 2)
+		_putchar(str[idx]);
 	_putchar('\n');
 }
