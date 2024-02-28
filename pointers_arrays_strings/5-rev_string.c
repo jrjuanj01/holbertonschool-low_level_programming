@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * rev_string - Reverses the order of elements on the string
  * @s: String being reversed
