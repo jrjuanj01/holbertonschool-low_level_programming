@@ -9,7 +9,9 @@ void puts2(char *str)
 		int ttl;
 		int idx;
 
-	for (ttl = 0; str[ttl] != '\0'; ttl++){}
+	for (ttl = 0; str[ttl] != '\0'; ttl++)
+	{
+	}
 	for (idx = 0; idx < ttl; idx += 2)
 		_putchar(str[idx]);
 	_putchar('\n');
