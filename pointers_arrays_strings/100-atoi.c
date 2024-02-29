@@ -18,9 +18,8 @@ int _atoi(char *s)
 		}
 		for (num = 0; (s[ttl] >= '0') && (s[ttl] <= '9'); ttl++)
 		{
-			num = num * 10 + (s[ttl] - '0');
+			num = num * 10 + neg * (s[ttl] - '0');
 		}
 	}
-	num = num * neg;
 	return (num);
 }
