@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * _stpbrk - Finds a given tring * @s: string being evaluated
+ * _strpbrk - Finds a given tring * @s: string being evaluated
  * @accept: Characters being searched for
+ * @s: string being verified
  * Return: *s or NULL
  */
 char *_strpbrk(char *s, char *accept)
