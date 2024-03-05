@@ -18,7 +18,7 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			if (accept[idx + 1] == '\0')
 				return (byte);
-			if (idx < 0)
+			if ((accept[idx] < 32) && (accept[idx] > 126))
 				return (byte);
 		}
 	}
