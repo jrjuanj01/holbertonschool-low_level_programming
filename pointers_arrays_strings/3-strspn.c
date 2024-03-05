@@ -8,7 +8,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int byte;
-	int idx;
+	int idx = 0;
 
 	for (byte = 0; *s != '\0'; s++, byte++)
 	{
@@ -21,6 +21,7 @@ unsigned int _strspn(char *s, char *accept)
 			if (accept[idx + 1] == '\0')
 				return (byte);
 		}
-		return (byte);
 	}
+	return (byte);
 }
+
