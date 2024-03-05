@@ -9,19 +9,18 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int byte;
 	int idx;
-	int ln;
 
-	for (ln = 0; accept[ln] != '\0'; ln++)
-	{}
-		for (byte = 0; *s != '\0'; s++, byte++)
+	for (byte = 0; *s != '\0'; s++, byte++)
+	{
+		if (accept[idx] == '\0')
+			return (byte);
+		for (idx = 0; accept[idx] != '\0'; idx++)
 		{
-			for (idx = 0; (accept[idx] != '\0') && (idx <= ln); idx++)
-			{
-				if (*s == accept[idx])
-					break;
-				if (accept[idx + 1] == '\0')
-					return (byte);
-			}
+			if (*s == accept[idx])
+				break;
+			if (accept[idx + 1] == '\0')
+				return (byte);
 		}
-	return (byte);
+		return (byte);
+	}
 }
