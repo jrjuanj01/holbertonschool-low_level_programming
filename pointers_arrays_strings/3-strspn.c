@@ -11,13 +11,11 @@ unsigned int _strspn(char *s, char *accept)
 	int idx;
 	int ln;
 
-	for (ln = -1; accept[ln] != '\0'; ln++)
+	for (ln = 0; accept[ln] != '\0'; ln++)
 	{}
-	if (ln > 0)
-	{
 		for (byte = 0; *s != '\0'; s++, byte++)
 		{
-			for (idx = 0; accept[idx] != '\0'; idx++)
+			for (idx = 0; (accept[idx] != '\0') && (idx <= ln); idx++)
 			{
 				if (*s == accept[idx])
 					break;
@@ -25,6 +23,5 @@ unsigned int _strspn(char *s, char *accept)
 					return (byte);
 			}
 		}
-	}
 	return (byte);
 }
