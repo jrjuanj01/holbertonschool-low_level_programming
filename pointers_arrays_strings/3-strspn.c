@@ -18,6 +18,8 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			if (accept[idx + 1] == '\0')
 				return (byte);
+			if (accept[idx] == "")
+				return (byte);
 		}
 	}
 	return (byte);
