@@ -14,9 +14,8 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		for (idx = 0; accept[idx] != '\0'; idx++)
 		{
-			if (*s != accept[idx])
+			if (*s == accept[idx])
 				break;
-			return (byte);
 		}
 	}
 	return (byte);
