@@ -18,7 +18,7 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			if (accept[idx + 1] == '\0')
 				return (byte);
-			if (accept[idx] == "")
+			if (accept[idx] == '\0')
 				return (byte);
 		}
 	}
