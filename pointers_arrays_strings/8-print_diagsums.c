@@ -23,6 +23,6 @@ void print_diagsums(int *a, int size)
 		sum2 = sum2 + a[idx];
 	}
 	printf("%d", sum1);
-	printf("%s",", ");
+	printf("%s", ", ");
 	printf("%d\n", sum2);
 }
