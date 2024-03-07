@@ -12,7 +12,7 @@ int helper(int x, int n)
 	if (x == n - 1)
 		return (1);
 	if (n > x)
-		return (helper(x +1, n));
+		return (helper(x + 1, n));
 	return (1);
 }
 
