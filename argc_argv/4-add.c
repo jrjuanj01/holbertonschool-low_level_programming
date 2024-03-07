@@ -28,9 +28,7 @@ int main(int argc, char *argv[])
 			}
 			ttl += atoi(argv[idx]);
 		}
-		printf("%d\n", ttl);
-		return (0);
 	}
-	printf("0\n");
+	printf("%d\n", ttl);
 	return (0);
 }
