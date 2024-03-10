@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
 /**
  * _calloc - allocates memory for an array of nmemb elements of size bytes each
  * @nmemb: elements
@@ -15,7 +14,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	ptr = malloc(ttl + 1);
+	
+	ptr = malloc(ttl);
 	if (ptr == NULL)
 		return (NULL);
 	
