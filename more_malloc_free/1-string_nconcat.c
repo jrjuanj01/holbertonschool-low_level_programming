@@ -1,8 +1,10 @@
 #include "main.h"
-#include <stdlib.h>/**
+#include <stdlib.h>
+/**
  * string_nconcat - concaenates n bytes of s2 to s1
  * @s1: first string
  * @s2: second string
+ * @n: number of bytes to be allocated of s2
  * Return: pointer
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
