@@ -21,7 +21,5 @@ int *array_range(int min, int max)
 		return (NULL);
 	for (idx = 0 ; min < max; idx++, min++)
 		ptr[idx] = min;
-	if (min == max)
-		putchar('\0');
 	return (ptr);
 }
