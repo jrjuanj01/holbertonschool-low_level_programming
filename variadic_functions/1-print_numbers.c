@@ -23,9 +23,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 				printf("%s", separator);
 		}
 		if (idx == n - 1)
-		{
 			printf("%d", va_arg(args, int));
-			printf("\n");
-		}
 	}
+	printf("\n");
 }
