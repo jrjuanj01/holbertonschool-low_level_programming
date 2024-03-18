@@ -35,7 +35,7 @@ void sprnt(va_list *args)
 	char *ptr = va_arg(*args, char *);
 
 	if (ptr == NULL)
-		printf("(nil)");
+		ptr = "(nil)";
 	printf("%s", ptr);
 }
 
