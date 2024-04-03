@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * sum_dlistint -  a function that returns the sum of all the data (n) of a doubly linked list
+ * sum_dlistint - sums all the data (n) of a doubly linked list
  * @head: pointer to the head node of the list
  * Return:the sum of all the data (n)
  */
