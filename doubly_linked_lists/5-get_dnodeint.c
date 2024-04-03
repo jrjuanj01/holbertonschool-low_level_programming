@@ -2,6 +2,7 @@
 
 /**
  * get_dnodeint_at_index - finds the index node
+ * @head: pointer to the head node of the list
  * @index: position of the node
  * Return: Pointer to node or NULL if node does not exist
  */
@@ -14,11 +15,8 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	{}
 	if (index > nodes)
 		return (NULL);
-	else
-	{
-		temp = head;
-		for (apr = 0; apr < index; apr++)
-			temp = (*temp).next;
-	}
+	temp = head;
+	for (apr = 0; apr < index; apr++)
+		temp = (*temp).next;
 	return (temp);
 }
