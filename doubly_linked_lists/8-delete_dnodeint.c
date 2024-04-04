@@ -38,13 +38,13 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			(**head).prev = NULL;
 			free(temp);
 		}
-		return (-1);
+		return (1);
 	}
-	else
+	if (index != 0)
 	{
 		for (temp = *head; index != 0; index--, temp = (*temp).next);
 
-		if (*temp == NULL)
+		if (temp == NULL)
 			return (-1);
 
 		(*(*temp).next).prev = (*temp).prev;
