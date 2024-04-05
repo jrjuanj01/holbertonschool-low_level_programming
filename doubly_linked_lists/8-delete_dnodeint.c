@@ -7,13 +7,12 @@
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *temp;
+	dlistint_t *temp = *head;
 
 	if (*head == NULL)
 		return (-1);
 	if (index == 0)
 	{
-		temp = *head;
 		if (temp->next != NULL)
 		{
 			*head = temp->next;
@@ -25,10 +24,12 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		*head = NULL;
 		return (1);
 	}
-	for (; index > 0; index--, temp = (*temp).next)
+	while (index > 0)
 	{
+		temp = temp->next;
 		if (temp == NULL)
 			return (-1);
+		index--;
 	}
 	temp->next->prev = temp->prev;
 	temp->prev->next = temp->next;
