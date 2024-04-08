@@ -18,11 +18,14 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (file == -1)
 		return (-1);
 
-	for (lib = 0, text = text_content; *text; text++, ltw++)
-		;
-	ltw = write(file, text_content, lib);
+	if (text_content != NULL)
+	{
+		for (lib = 0, text = text_content; *text; text++, ltw++)
+			;
+		ltw = write(file, text_content, lib);
+	}
 
 	if (close(file) == -1 || lib != ltw)
 		return (-1);
-	return (ltw);
+	return (1);
 }
