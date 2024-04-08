@@ -25,14 +25,21 @@ int main(int argc, char *argv[])
 	if (lib  == -1 || og_file == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		close(og_file);
+		close(new_file);
 		return (98);
 	}
 
 	if (new_file == -1 || lib != ltw)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+		close(og_file);
+		close(new_file);
 		return (99);
 	}
+
+	close(og_file);
+	close(new_file);
 
 	if (close(og_file) == -1 || close(new_file) == -1)
 	{
